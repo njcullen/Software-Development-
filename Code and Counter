@@ -1,0 +1,21 @@
+public static void countdown(int x) {
+        // complete this method
+
+        char[] code = { 'C', 'O', 'D', 'E' };
+        int i =  code[0];
+        
+        while (x > 0 ) {
+            if ( i >= code.length )  
+                i = 0;
+
+            System.out.print(x + " ");
+            x = x - 1;
+            
+            System.out.print(code[i] + " ");
+            System.out.println();
+
+            i = i + 1;
+
+        }
+
+    }
